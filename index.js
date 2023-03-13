@@ -1,17 +1,5 @@
-let person = {
-  name: "Alex",
-  age: 28,
-  country: "Mexico",
-};
+let inputBtn = document.getElementById("input-btn");
 
-function logData() {
-  console.log(
-    person.name +
-      " is " +
-      person.age +
-      " years old and lives in " +
-      person.country
-  );
-}
-
-logData();
+inputBtn.addEventListener("click", function () {
+  console.log("Button clicked from addEventListener");
+});
